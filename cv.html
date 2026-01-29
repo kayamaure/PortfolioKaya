@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Kaya Maure</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                    <li><a href="projets.html" class="nav-link">Projets</a></li>
+                    <li><a href="cv.html" class="nav-link active">CV</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h1>Mon Curriculum Vitae</h1>
+                <p class="intro-text">
+                    Pour une vision synthétique de mon profil, vous pouvez consulter ou télécharger mon CV au format
+                    PDF.
+                </p>
+
+                <div class="cv-wrapper">
+                    <div class="cv-actions">
+                        <!-- Version PDF -->
+                        <div class="cv-card" id="cardPdf" onclick="showPreview('pdf')">
+                            <h3>CV (PDF)</h3>
+                            <p>Version détaillée au format PDF.</p>
+                            <div class="btn-group" style="margin-top: 15px;">
+                                <button class="btn btn-sm">Afficher</button>
+                                <a href="images/CV_Kaya_MAURE__Stage.pdf" class="btn btn-sm"
+                                    download="CV_Kaya_MAURE.pdf" onclick="event.stopPropagation()">Télécharger</a>
+                            </div>
+                        </div>
+
+                        <!-- Version Vidéo -->
+                        <div class="cv-card" id="cardVideo" onclick="showPreview('video')">
+                            <h3>CV Vidéo</h3>
+                            <p>Présentation dynamique en 2 minutes.</p>
+                            <div class="btn-group" style="margin-top: 15px;">
+                                <button class="btn btn-sm">Lire la vidéo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aperçu -->
+                    <div class="cv-preview" id="cvPreview">
+                        <div class="preview-placeholder">
+                            <p>Sélectionnez une version pour l'afficher ici.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div style="text-align: center; margin-top: 40px; margin-bottom: 50px;">
+                <a href="contact.html" class="btn">Me contacter</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kaya Maure. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

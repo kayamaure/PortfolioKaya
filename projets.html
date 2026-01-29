@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Mon Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Kaya Maure</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                    <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                    <li><a href="cv.html" class="nav-link">CV</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h1>Mes Projets</h1>
+                <p class="intro-text">
+                    Une sélection de mes réalisations les plus significatives, démontrant ma capacité à transformer des
+                    concepts en solutions concrètes.
+                </p>
+
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <article class="project-card" data-title="Infrastructure Réseau"
+                        data-desc="Mise en place d’une infrastructure réseau complète incluant la mise en place de protocoles de routage, le déploiement des services, la sécurisation des échanges et l’automatisation des tâches, dans le cadre de la modernisation des opérations d’une association."
+                        data-image="images/diagramme_projet_sae.jpg" data-tags="Cisco, TCP/IP, DNS, DHCP, OSPF"
+                        data-link-code="https://github.com/kayamaure/configurations-s5b01.git" data-link-demo="#">
+                        <div class="project-image">
+                            <img src="images/diagramme_projet_sae.jpg" alt="Infrastructure Réseau"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="hover-overlay"> Cliquez pour détails </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Implementation d'une infrastructure réseau</h3>
+                            <p class="project-description">
+                                Mise en place d’une infrastructure réseau complète.
+                            </p>
+                            <div class="project-skills">
+                                <span class="skill-tag">Cisco</span>
+                                <span class="skill-tag">TCP/IP</span>
+                                <span class="skill-tag">DNS</span>
+                                <span class="skill-tag">DHCP</span>
+                                <span class="skill-tag">OSPF</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2 -->
+                    <article class="project-card" data-title="Site web de partage de photos"
+                        data-desc="Développement d’un site web dédié au partage,à la gestion et à la consultation de photos, avec une interface intuitive et des fonctionnalités adaptées aux utilisateurs, dans le cadre de la modernisation des opérations d’une association."
+                        data-image="images/image_logo_nailloux.jpg" data-tags="PHP, MySQL, HTML, CSS, JavaScript, MVC"
+                        data-link-code="https://github.com/kayamaure/Nailloux.git">
+                        <div class="project-image">
+                            <img src="images/image_logo_nailloux.jpg" alt="Site web de partage de photos"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="hover-overlay"> Cliquez pour détails </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Site web de partage de photos</h3>
+                            <p class="project-description">
+                                Développement d’un site web dédié au partage des photos.
+                            </p>
+                            <div class="project-skills">
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">MVC</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3 -->
+                    <article class="project-card" data-title="Application de gestion d’une équipe sportive"
+                        data-desc="Application web permettant la gestion d’une équipe sportive, incluant l’authentification sécurisée des utilisateurs et la gestion des membres. Le projet repose sur le développement de deux API REST (authentification et gestion d’équipe) et d’une interface utilisateur en PHP, avec une communication client–serveur structurée et sécurisée via JWT."
+                        data-image="images/images_sport_projet.jpg" data-tags="PHP,MySQL,API REST,JWT,HTML/CSS, MVC"
+                        data-link-code="https://github.com/kayamaure/R401_MiniProjet.git" data-link-demo="#">
+                        <div class="project-image">
+                            <img src="images/images_sport_projet.jpg" alt="Application de gestion d’une équipe sportive"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="hover-overlay"> Cliquez pour détails </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application de gestion d’une équipe sportive</h3>
+                            <p class="project-description">
+                                Application web permettant la gestion d’une équipe sportive.
+                            </p>
+                            <div class="project-skills">
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">API REST</span>
+                                <span class="skill-tag">JWT</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">MVC</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 4 -->
+                    <article class="project-card" data-title="Développement d’un proxy FTP"
+                        data-desc="Développement d’un proxy FTP en langage C permettant d’intercepter et de relayer les communications entre un client et un serveur FTP. Le projet repose sur la gestion des sockets TCP, l’analyse des commandes FTP et le traitement des échanges client–serveur."
+                        data-image="images/Proxy_Server_Diagram_FR.png" data-tags="C,Sockets TCP,FTP"
+                        data-link-code="https://github.com/kayamaure/Proxy.git" data-link-demo="#">
+                        <div class="project-image">
+                            <img src="images/Proxy_Server_Diagram_FR.png" alt="Développement d’un proxy FTP"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="hover-overlay"> Cliquez pour détails </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Développement d’un proxy FTP</h3>
+                            <p class="project-description">
+                                Développement d’un proxy FTP en langage C permettant d’intercepter et de relayer des
+                                communications.
+                            </p>
+                            <div class="project-skills">
+                                <span class="skill-tag">C</span>
+                                <span class="skill-tag">Sockets TCP</span>
+                                <span class="skill-tag">FTP</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="cv.html" class="btn">Consulter mon CV</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Titre du Projet</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <div id="modalImage" class="project-placeholder"
+                        style="height: 200px; width: 100%; border-radius: 8px;">Image</div>
+                </div>
+                <div class="modal-text">
+                    <p id="modalDescription" class="modal-desc"></p>
+                    <div id="modalTags" class="project-skills" style="margin-top: 20px;"></div>
+                    <div class="modal-links" style="margin-top: 30px;">
+                        <a href="#" id="modalLinkCode" class="btn-sm" target="_blank">Lien GitHub</a>
+                        <a href="#" id="modalLinkDemo" class="btn-sm btn-outline" target="_blank">Démonstration</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kaya Maure. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

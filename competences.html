@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Mon Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Kaya Maure</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="competences.html" class="nav-link active">Compétences</a></li>
+                    <li><a href="projets.html" class="nav-link">Projets</a></li>
+                    <li><a href="cv.html" class="nav-link">CV</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <div class="competences-intro">
+                    <h1>Mes Compétences</h1>
+                    <p class="intro-text">
+                        Mon parcours en BUT Informatique m'a permis de développer un large éventail de compétences
+                        techniques. Voici un aperçu des domaines dans lesquels j’ai pu progresser et mettre mes
+                        connaissances en pratique.
+                    </p>
+                </div>
+
+                <!-- Grille de Compétences Flip Cards -->
+                <div class="skills-section">
+                    <div class="competences-grid">
+
+                        <!-- Card 1: Développement (Red) -->
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red">
+                                    <h3>Développement Web</h3>
+                                    <p>Conception et création d’applications web interactives et performantes,
+                                        en respectant les bonnes pratiques de code et de sécurité.
+                                    </p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Développement Web</h3>
+                                    <div class="tools-container">
+                                        <strong>Outils :</strong>
+                                        <div class="tools-tags">
+                                            <span>HTML/CSS</span>
+                                            <span>Java</span>
+                                            <span>PHP</span>
+                                            <span>Python</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Système et Réseaux (Orange) -->
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-orange">
+                                    <h3>Système et Réseaux</h3>
+                                    <p>Optimisation et administration de systèmes et réseaux pour assurer la
+                                        la fiabilité des solutions informatiques.</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Système et Réseaux</h3>
+                                    <div class="tools-container">
+                                        <strong>Outils :</strong>
+                                        <div class="tools-tags">
+                                            <span>Linux</span>
+                                            <span>Kubernetes</span>
+                                            <span>Docker</span>
+                                            <span>Vagrant</span>
+                                            <span>Ansible</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Cybersecurité (Yellow) -->
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-green-comp">
+                                    <h3>Cybersecurité</h3>
+                                    <p>Installer, configurer et sécuriser les systèmes pour garantir l'intégrité
+                                        et la confidentialité des données.</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Cybersecurité</h3>
+                                    <div class="tools-container">
+                                        <strong>Outils :</strong>
+                                        <div class="tools-tags">
+                                            <span>RBAC</span>
+                                            <span>Gestion des identités</span>
+                                            <span>Conformité ISO</span>
+                                            <span>MITRE ATT&CK</span>
+                                            <span>SNMP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Base de données (Blue) -->
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue">
+                                    <h3>Base de données</h3>
+                                    <p>Conception, modélisation et administration de bases de données pour assurer la
+                                        persistance et l'intégrité des informations.</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Base de données</h3>
+                                    <div class="tools-container">
+                                        <strong>Outils :</strong>
+                                        <div class="tools-tags">
+                                            <span>MySQL</span>
+                                            <span>PostgreSQL</span>
+                                            <span>MongoDB</span>
+                                            <span>NoSQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5: Gestion de projet (Yellow) -->
+                        <div class="flip-card card-centered" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-yellow">
+                                    <h3>Gestion de projet</h3>
+                                    <p>Planification, organisation et suivi de projets informatiques en adoptant des
+                                        méthodes agiles et collaboratives.</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Gestion de projet</h3>
+                                    <div class="tools-container">
+                                        <strong>Outils :</strong>
+                                        <div class="tools-tags">
+                                            <span>Trello</span>
+                                            <span>GitHub Projects</span>
+                                            <span>Scrum</span>
+                                            <span>Agile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <!-- Section Évolution -->
+                <div class="evolution-timeline">
+                    <h2>Mon Évolution</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>1ère Année :<br>Les Fondations</h3>
+                                <p>Apprentissage des bases de l'algorithmique, du développement web (HTML/CSS)
+                                    et de
+                                    l'administration système.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>2ème Année :<br>Approfondissement</h3>
+                                <p>Développement d’applications complexes et gestion de bases de données
+                                    avancées,
+                                    appliqués lors d'un stage en entreprise et grands projets en équipe.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>3ème Année :<br>Professionnalisation</h3>
+                                <p>Gestion de projet et mise en pratique en entreprise à travers des missions
+                                    concrètes
+                                    et des projets réalisés en conditions professionnelles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="projets.html" class="btn">Découvrir mes projets</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kaya Maure. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

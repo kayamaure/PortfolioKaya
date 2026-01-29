@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Kaya Maure</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                    <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                    <li><a href="projets.html" class="nav-link">Projets</a></li>
+                    <li><a href="cv.html" class="nav-link">CV</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-image">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dot red"></div>
+                            <div class="terminal-dot yellow"></div>
+                            <div class="terminal-dot green"></div>
+                        </div>
+                        <div class="terminal-content"
+                            style="padding: 20px; display: flex; align-items: center; justify-content: center; height: 100%; flex-direction: column;">
+                            <div id="terminal-lines"
+                                style="margin-bottom: 20px; text-align: left; width: 100%; max-width: 400px;">
+                                <p class="terminal-line" data-text="&gt; Initialisation du portfolio..."></p>
+                                <p class="terminal-line" data-text="&gt; Chargement des ressources... [OK]"></p>
+                                <p class="terminal-line" data-text="&gt; Vérification des protocoles de sécurité...">
+                                </p>
+                                <p class="terminal-line" data-text="&gt; Accès autorisé."></p>
+                            </div>
+                            <h1 id="heroTitle"
+                                style="font-size: 3rem; margin: 0; font-weight: 800; color: #4ade80; font-family: 'JetBrains Mono', monospace; opacity: 0;">
+                                &gt; Bienvenue !<span class="cursor-blink">_</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <img src="images/kayaimage.png" alt="Photo de Kaya" class="hero-photo">
+                    <p class="hero-subtitle"
+                        style="color: var(--color-text); font-size: 1.2rem; line-height: 1.6; margin-bottom: 25px; margin-top: 20px; font-family: 'JetBrains Mono', monospace;">
+                        Je m’appelle <span style="color: var(--color-primary); font-weight: 800; font-size: 3rem;">Kaya
+                            Maure</span>.<br>
+                        Étudiante en troisième année de BUT Informatique à l’IUT de Toulouse, je suis le
+                        parcours
+                        Déploiement d’applications communicantes et sécurisées.<br><br>
+                        À travers ce portfolio, je présente mon parcours, mes compétences et les projets que
+                        j’ai
+                        réalisés au cours de ma formation et de mes expériences !
+                    </p>
+                    <div style="margin-top: 25px;">
+                        <a href="projets.html" class="btn">Voir mes projets</a>
+                        <a href="cv.html" class="btn"
+                            style="background: transparent; border: 1px solid var(--color-primary); margin-left: 10px;">Mon
+                            CV</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+
+                <span class="arrow"></span>
+            </a>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <h2>À propos de moi</h2>
+                <div class="about-content" style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px; padding-top: 40px;">
+                        <p style="margin-bottom: 1rem;">
+                            Je me spécialise en cybersécurité,
+                            développement d’applications web et administration systèmes et réseaux.
+                            Curieuse et rigoureuse, je conçois des solutions techniques robustes en veillant à leur
+                            sécurité, leur performance et leur simplicité d’utilisation.
+                        </p>
+                    </div>
+                    <div
+                        style="flex: 1; min-width: 300px; background: var(--color-secondary); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h3 style="margin-bottom: 1rem; color: var(--color-primary);">Mes atouts</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                            <li style="display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--color-accent);">✓</span> Autonomie et adaptation
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--color-accent);">✓</span> Travail en équipe
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--color-accent);">✓</span> Veille technologique active
+                            </li>
+                        </ul>
+                        <div style="text-align: center; margin-top: 20px;">
+                            <a href="competences.html" class="btn">Voir mes compétences</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kaya Maure. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
