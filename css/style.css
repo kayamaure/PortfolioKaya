@@ -133,10 +133,16 @@ h1 {
     visibility: hidden;
 }
 
+.nav,
+.nav-list {
+    height: 100%;
+}
+
 .nav-list {
     display: flex;
     gap: 30px;
     list-style: none;
+    align-items: center;
 }
 
 .nav-link {
@@ -144,11 +150,25 @@ h1 {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: var(--color-primary);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .hamburger {
@@ -418,6 +438,15 @@ main {
 .section {
     padding: 30px 0 80px 0;
     scroll-margin-top: calc(var(--header-height) + 20px);
+}
+
+/* Experience Headers - Static with scroll offset */
+#projets,
+#stages {
+    scroll-margin-top: calc(var(--header-height) + 20px);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .section h2 {
@@ -726,6 +755,25 @@ main {
 .btn-outline:hover {
     background-color: rgba(255, 255, 255, 0.05);
     border-color: var(--color-text);
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.meta-icon {
+    color: var(--color-primary);
 }
 
 @media (max-width: 600px) {
@@ -1148,6 +1196,53 @@ main {
 }
 
 /* Dark Slate/Black */
+.bg-dark-gray {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+}
+
+/* Navigation Dropdown */
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+/* Show dropdown on hover over nav-item */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px 16px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(14, 165, 233, 0.1);
+    color: var(--color-primary);
+}
 
 /* Back Side Styles */
 .flip-card-back {

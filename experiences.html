@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Mon Portfolio</title>
+    <title>Expériences - Mon Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +22,13 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Accueil</a></li>
                     <li><a href="competences.html" class="nav-link">Compétences</a></li>
-                    <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                    <li class="nav-item">
+                        <a href="experiences.html" class="nav-link active">Expériences</a>
+                        <div class="dropdown-menu">
+                            <a href="experiences.html#projets" class="dropdown-item">Projets</a>
+                            <a href="experiences.html#stages" class="dropdown-item">Stages</a>
+                        </div>
+                    </li>
                     <li><a href="cv.html" class="nav-link">CV</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
@@ -38,11 +44,15 @@
     <main>
         <div class="container">
             <section class="section">
-                <h1>Mes Projets</h1>
+                <h1>Mes Expériences</h1>
                 <p class="intro-text">
-                    Une sélection de mes réalisations les plus significatives, démontrant ma capacité à transformer des
-                    concepts en solutions concrètes.
+                    Mon parcours académique et professionnel m'a permis d'acquérir une expérience concrète à travers
+                    divers projets et stages.
                 </p>
+
+                <h2 id="projets" style="color: var(--color-primary);">
+                    Projets</h2>
+
 
                 <div class="projects-grid">
                     <!-- Projet 1 -->
@@ -142,6 +152,102 @@
                                 <span class="skill-tag">C</span>
                                 <span class="skill-tag">Sockets TCP</span>
                                 <span class="skill-tag">FTP</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <h2 id="stages" style="color: var(--color-primary);">
+                    Stages</h2>
+                <div class="projects-grid">
+                    <!-- Stage 1 -->
+                    <article class="project-card" data-title="Stage - Création d'une interface avec Power BI"
+                        data-desc="Création d'une interface avec Power BI pour la visualisaton des données de l'outil Sentinel LDK-EMS."
+                        data-image="images/stage1_powerbi.png" data-tags="Power BI, Sentinel LDK-EMS" data-link-code="#"
+                        data-link-demo="#">
+                        <div class="project-image">
+                            <img src="images/stage1_powerbi.png" alt="Interface Power BI"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="hover-overlay"> Cliquez pour détails </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Stage - Création d'une interface avec Power BI</h3>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="meta-icon">
+                                        <path d="M3 21h18" />
+                                        <path d="M5 21V7l8-4 8 4v14" />
+                                        <path d="M17 21v-8" />
+                                        <path d="M7 21v-8" />
+                                    </svg>
+                                    <span>Thales AVS</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="meta-icon">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    <span>Toulouse, France</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="meta-icon">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                    <span>Avril 2025 - Juin 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Stage 2 -->
+                    <article class="project-card" data-title="Stage - Amélioration et Industrialisation des Processus"
+                        data-desc="Automatisation du processus de réception des livrables et de paiement des fournisseurs avec la suite Office 365."
+                        data-image="images/stage2_office365.png" data-tags="Office 365, Power Automate, Excel"
+                        data-link-code="#" data-link-demo="#">
+                        <div class="project-image">
+                            <img src="images/stage2_office365.png" alt="Suite Office 365"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="hover-overlay"> Cliquez pour détails </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Stage - Amélioration et Industrialisation des Processus</h3>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="meta-icon">
+                                        <path d="M3 21h18" />
+                                        <path d="M5 21V7l8-4 8 4v14" />
+                                        <path d="M17 21v-8" />
+                                        <path d="M7 21v-8" />
+                                    </svg>
+                                    <span>RTE France</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="meta-icon">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    <span>Toulouse, France</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="meta-icon">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                    <span>Mars 2026 - Présent</span>
+                                </div>
                             </div>
                         </div>
                     </article>
