@@ -54,7 +54,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        runAnimation();
+        if (!sessionStorage.getItem('visited')) {
+            runAnimation();
+            sessionStorage.setItem('visited', 'true');
+        } else {
+            // Instant load for returning visitors
+            terminalLines.forEach(line => {
+                line.textContent = line.getAttribute('data-text');
+            });
+
+            if (heroTitle) {
+                heroTitle.style.opacity = '1';
+                heroTitle.style.animation = 'none';
+            }
+
+            if (heroText) {
+                heroText.style.opacity = '1';
+                heroText.style.animation = 'none';
+            }
+        }
     }
 
     // Form Validation
@@ -237,6 +255,65 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = 'auto';
         }
     });
+
+    // Project Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('#projects-list .project-card');
+
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+
+                    // Reset animation
+                    card.classList.remove('animate-in');
+                    void card.offsetWidth; // Trigger reflow
+
+                    // Check if category includes the filter value (space separated)
+                    if (filterValue === 'all' || category.split(' ').includes(filterValue)) {
+                        card.style.display = 'flex';
+                        card.classList.add('animate-in');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    // Academic Carousel Logic
+    const slides = document.querySelectorAll('.academic-slide');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        // Wrap around
+        if (index >= slides.length) currentSlide = 0;
+        else if (index < 0) currentSlide = slides.length - 1;
+        else currentSlide = index;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[currentSlide].classList.add('active');
+    }
+
+    if (nextBtn && prevBtn && slides.length > 0) {
+        nextBtn.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+    }
 
 });
 

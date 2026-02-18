@@ -11,7 +11,6 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -37,6 +36,27 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
+                <div class="header-socials">
+                    <a href="https://www.linkedin.com/in/kaya-maúre-4100b1305" class="header-social-link"
+                        target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kayamaure" class="header-social-link" target="_blank"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -72,8 +92,8 @@
                     <img src="images/kayaimage.png" alt="Photo de Kaya" class="hero-photo">
                     <p class="hero-subtitle"
                         style="color: var(--color-text); font-size: 1.2rem; line-height: 1.6; margin-bottom: 25px; margin-top: 20px; font-family: 'JetBrains Mono', monospace;">
-                        Je m’appelle <span style="color: var(--color-primary); font-weight: 800; font-size: 3rem;">Kaya
-                            Maure</span>.<br>
+                        <span style="color: var(--color-primary); font-weight: 800; font-size: 3rem;">Kaya
+                            Maure</span><br>
                         Étudiante en troisième année de BUT Informatique à l’IUT de Toulouse, je suis le
                         parcours
                         Déploiement d’applications communicantes et sécurisées.<br><br>
@@ -97,18 +117,139 @@
 
         <section class="section" id="about">
             <div class="container">
-                <h2>À propos de moi</h2>
-                <div class="about-content" style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 300px; padding-top: 40px;">
-                        <p style="margin-bottom: 1rem;">
+                <div class="profile-layout">
+                    <!-- Row 1 Left: À propos Text -->
+                    <div class="profile-block about-block">
+                        <h2>À propos de moi</h2>
+                        <p class="about-text">
                             Je me spécialise en cybersécurité,
                             développement d’applications web et administration systèmes et réseaux.
                             Curieuse et rigoureuse, je conçois des solutions techniques robustes en veillant à leur
                             sécurité, leur performance et leur simplicité d’utilisation.
                         </p>
+
+                        <!-- Scholarship Badge -->
+                        <div class="scholarship-badge">
+                            <div class="scholarship-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="trophy-icon">
+                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                    <path d="M4 22h16"></path>
+                                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                                </svg>
+                            </div>
+                            <div class="scholarship-text">
+                                <h3>Bourse d'Excellence TotalEnergies</h3>
+                                <p>Lauréate du programme de bourses internationales pour mes études supérieures en
+                                    France.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div
-                        style="flex: 1; min-width: 300px; background: var(--color-secondary); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+
+                    <!-- Row 1 Right: Parcours Académique (Carousel) -->
+                    <div class="profile-block academic-block">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h2 style="margin: 0;">Parcours Académique</h2>
+                            <div class="carousel-controls">
+                                <button id="prevBtn" class="nav-arrow" aria-label="Précédent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M15 18l-6-6 6-6" />
+                                    </svg>
+                                </button>
+                                <button id="nextBtn" class="nav-arrow" aria-label="Suivant">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M9 18l6-6-6-6" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="academic-carousel-container">
+                            <!-- Slide 1 -->
+                            <div class="academic-slide active" data-index="0">
+                                <div class="academic-card-compact">
+                                    <div class="compact-header">
+                                        <div class="card-icon-container small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" class="academic-icon">
+                                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                            </svg>
+                                        </div>
+                                        <span class="card-year">2021</span>
+                                    </div>
+                                    <h3 class="card-title-compact">Diplôme des études secondaires</h3>
+                                    <p class="card-desc-compact">
+                                        TSCE, Maputo - Mozambique<br>
+                                        Spécialité Mathématiques et Physique.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="academic-slide" data-index="1">
+                                <div class="academic-card-compact">
+                                    <div class="compact-header">
+                                        <div class="card-icon-container small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" class="academic-icon">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                                <path
+                                                    d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                                            </svg>
+                                        </div>
+                                        <span class="card-year">2025</span>
+                                    </div>
+                                    <h3 class="card-title-compact">DUT Informatique</h3>
+                                    <p class="card-desc-compact">
+                                        IUT de Toulouse - Université de Toulouse.<br>
+                                        Diplôme de 2ème année de BUT.
+                                        Mention Bien.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="academic-slide" data-index="2">
+                                <div class="academic-card-compact">
+                                    <div class="compact-header">
+                                        <div class="card-icon-container small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" class="academic-icon">
+                                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                            </svg>
+                                        </div>
+                                        <span class="card-year">2026</span>
+                                    </div>
+                                    <h3 class="card-title-compact">BUT3 Informatique</h3>
+                                    <p class="card-desc-compact">
+                                        IUT de Toulouse - Université de Toulouse.<br>
+                                        3ème année de BUT.<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 Left: Skills Diagram (Removed) -->
+                    <!-- Diagram removed as per user request -->
+
+                    <!-- Row 2 Left: Mes Atouts List -->
+                    <div class="profile-block skills-block"
+                        style="background: var(--color-secondary); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
                         <h3 style="margin-bottom: 1rem; color: var(--color-primary);">Mes atouts</h3>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
                             <li style="display: flex; align-items: center; gap: 10px;">
@@ -121,9 +262,11 @@
                                 <span style="color: var(--color-accent);">✓</span> Veille technologique active
                             </li>
                         </ul>
-                        <div style="text-align: center; margin-top: 20px;">
-                            <a href="competences.html" class="btn">Voir mes compétences</a>
-                        </div>
+                    </div>
+
+                    <!-- Row 2 Right: Button Action -->
+                    <div class="profile-block skills-action-block">
+                        <a href="competences.html" class="btn">Voir mes compétences</a>
                     </div>
                 </div>
             </div>

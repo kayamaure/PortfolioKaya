@@ -32,6 +32,27 @@
                     <li><a href="cv.html" class="nav-link">CV</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
+                <div class="header-socials">
+                    <a href="https://www.linkedin.com/in/kaya-maúre-4100b1305" class="header-social-link"
+                        target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kayamaure" class="header-social-link" target="_blank"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
                 <button class="hamburger" aria-label="Menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -44,19 +65,30 @@
     <main>
         <div class="container">
             <section class="section">
-                <h1>Mes Expériences</h1>
+                <h1 class="page-title-compact">Mes Expériences</h1>
                 <p class="intro-text">
                     Mon parcours académique et professionnel m'a permis d'acquérir une expérience concrète à travers
                     divers projets et stages.
                 </p>
-
-                <h2 id="projets" style="color: var(--color-primary);">
+                <h2 id="projets" style="color: var(--color-primary); margin-bottom: 30px;">
                     Projets</h2>
 
+                <!-- Filter Projects -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="realiser">Réaliser</button>
+                    <button class="filter-btn" data-filter="administrer">Administrer</button>
+                    <button class="filter-btn" data-filter="collaborer">Collaborer</button>
+                    <button class="filter-btn" data-filter="optimiser">Optimiser</button>
+                    <button class="filter-btn" data-filter="gerer">Gérer</button>
+                    <button class="filter-btn" data-filter="conduire">Conduire</button>
+                </div>
 
-                <div class="projects-grid">
+
+                <div class="projects-grid" id="projects-list">
                     <!-- Projet 1 -->
-                    <article class="project-card" data-title="Infrastructure Réseau"
+                    <article class="project-card" data-category="collaborer conduire"
+                        data-title="Infrastructure Réseau"
                         data-desc="Mise en place d’une infrastructure réseau complète incluant la mise en place de protocoles de routage, le déploiement des services, la sécurisation des échanges et l’automatisation des tâches, dans le cadre de la modernisation des opérations d’une association."
                         data-image="images/diagramme_projet_sae.jpg" data-tags="Cisco, TCP/IP, DNS, DHCP, OSPF"
                         data-link-code="https://github.com/kayamaure/configurations-s5b01.git" data-link-demo="#">
@@ -81,7 +113,8 @@
                     </article>
 
                     <!-- Projet 2 -->
-                    <article class="project-card" data-title="Site web de partage de photos"
+                    <article class="project-card" data-category="realiser gerer administrer collaborer conduire"
+                        data-title="Site web de partage de photos"
                         data-desc="Développement d’un site web dédié au partage,à la gestion et à la consultation de photos, avec une interface intuitive et des fonctionnalités adaptées aux utilisateurs, dans le cadre de la modernisation des opérations d’une association."
                         data-image="images/image_logo_nailloux.jpg" data-tags="PHP, MySQL, HTML, CSS, JavaScript, MVC"
                         data-link-code="https://github.com/kayamaure/Nailloux.git">
@@ -107,7 +140,8 @@
                     </article>
 
                     <!-- Projet 3 -->
-                    <article class="project-card" data-title="Application de gestion d’une équipe sportive"
+                    <article class="project-card" data-category="realiser conduire gerer"
+                        data-title="Application de gestion d’une équipe sportive"
                         data-desc="Application web permettant la gestion d’une équipe sportive, incluant l’authentification sécurisée des utilisateurs et la gestion des membres. Le projet repose sur le développement de deux API REST (authentification et gestion d’équipe) et d’une interface utilisateur en PHP, avec une communication client–serveur structurée et sécurisée via JWT."
                         data-image="images/images_sport_projet.jpg" data-tags="PHP,MySQL,API REST,JWT,HTML/CSS, MVC"
                         data-link-code="https://github.com/kayamaure/R401_MiniProjet.git" data-link-demo="#">
@@ -133,7 +167,8 @@
                     </article>
 
                     <!-- Projet 4 -->
-                    <article class="project-card" data-title="Développement d’un proxy FTP"
+                    <article class="project-card" data-category="optimiser conduire"
+                        data-title="Développement d’un proxy FTP"
                         data-desc="Développement d’un proxy FTP en langage C permettant d’intercepter et de relayer les communications entre un client et un serveur FTP. Le projet repose sur la gestion des sockets TCP, l’analyse des commandes FTP et le traitement des échanges client–serveur."
                         data-image="images/Proxy_Server_Diagram_FR.png" data-tags="C,Sockets TCP,FTP"
                         data-link-code="https://github.com/kayamaure/Proxy.git" data-link-demo="#">
@@ -161,9 +196,10 @@
                     Stages</h2>
                 <div class="projects-grid">
                     <!-- Stage 1 -->
-                    <article class="project-card" data-title="Stage - Création d'une interface avec Power BI"
+                    <article class="project-card" data-category="gerer"
+                        data-title="Stage - Création d'une interface avec Power BI"
                         data-desc="Création d'une interface avec Power BI pour la visualisaton des données de l'outil Sentinel LDK-EMS."
-                        data-image="images/stage1_powerbi.png" data-tags="Power BI, Sentinel LDK-EMS" data-link-code="#"
+                        data-image="images/stage1_powerbi.png" data-tags="Power BI, Sentinel LDK-EMS"
                         data-link-demo="#">
                         <div class="project-image">
                             <img src="images/stage1_powerbi.png" alt="Interface Power BI"
@@ -207,10 +243,11 @@
                     </article>
 
                     <!-- Stage 2 -->
-                    <article class="project-card" data-title="Stage - Amélioration et Industrialisation des Processus"
+                    <article class="project-card" data-category="collaborer"
+                        data-title="Stage - Amélioration et Industrialisation des Processus"
                         data-desc="Automatisation du processus de réception des livrables et de paiement des fournisseurs avec la suite Office 365."
                         data-image="images/stage2_office365.png" data-tags="Office 365, Power Automate, Excel"
-                        data-link-code="#" data-link-demo="#">
+                        data-link-demo="#">
                         <div class="project-image">
                             <img src="images/stage2_office365.png" alt="Suite Office 365"
                                 style="width: 100%; height: 100%; object-fit: cover;">
