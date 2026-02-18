@@ -74,201 +74,230 @@
                     </p>
                 </div>
 
-                <!-- Section Évolution moved to top -->
-                <div class="evolution-timeline" style="margin-bottom: 50px;">
-                    <!-- <h2>Mon Évolution</h2> -->
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h3>1ère Année :<br>Les Fondations</h3>
-                                <p>Apprentissage des bases de l'algorithmique, du développement web (HTML/CSS)
-                                    et de
-                                    l'administration système.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h3>2ème Année :<br>Approfondissement</h3>
-                                <p>Développement d’applications complexes et gestion de bases de données
-                                    avancées,
-                                    appliqués lors d'un stage en entreprise et grands projets en équipe.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h3>3ème Année :<br>Professionnalisation</h3>
-                                <p>Gestion de projet et mise en pratique en entreprise à travers des missions
-                                    concrètes
-                                    et des projets réalisés en conditions professionnelles.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
 
                 <!-- Grille de Compétences Flip Cards -->
                 <div class="skills-section">
-                    <div class="competences-grid">
+                    <!-- Competences Carousel -->
+                    <div class="competence-carousel-wrapper">
+                        <!-- Navigation Controls -->
 
-                        <!-- Card 1: Développement (Red) -->
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-red">
-                                    <h3>Réaliser</h3>
-                                    <p>Conception et création d’applications web interactives et performantes,
-                                        en respectant les bonnes pratiques de code et de sécurité.
-                                    </p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h3>Développement Web</h3>
-                                    <div class="tools-container">
-                                        <strong>Outils :</strong>
-                                        <div class="tools-tags">
-                                            <span>HTML/CSS</span>
-                                            <span>Java</span>
-                                            <span>PHP</span>
-                                            <span>Python</span>
-                                            <span>JavaScript</span>
+                        <div class="competence-carousel-container">
+
+                            <!-- Slide 1: Réaliser, Administrer, Collaborer -->
+                            <div class="competence-slide active" data-index="0">
+                                <!-- Card 1: Réaliser -->
+                                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front bg-red">
+                                            <h3>Réaliser</h3>
+                                            <p>Conception et création d’applications web interactives et performantes,
+                                                en respectant les bonnes pratiques de code et de sécurité.</p>
                                         </div>
+                                        <div class="flip-card-back">
+                                            <h3>Développement Web</h3>
+                                            <div class="tools-container">
+                                                <strong>Outils :</strong>
+                                                <div class="tools-tags">
+                                                    <span>HTML/CSS</span>
+                                                    <span>Java</span>
+                                                    <span>PHP</span>
+                                                    <span>Python</span>
+                                                    <span>JavaScript</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2: Administrer -->
+                                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front bg-yellow">
+                                            <h3>Administrer</h3>
+                                            <p>Installer, configurer et maintenir les infrastructures, services et
+                                                réseaux informatiques.</p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Administrer</h3>
+                                            <div class="tools-container">
+                                                <strong>Compétences :</strong>
+                                                <div class="tools-tags">
+                                                    <span>Linux</span>
+                                                    <span>Kubernetes</span>
+                                                    <span>Docker</span>
+                                                    <span>Vagrant</span>
+                                                    <span>Ansible</span>
+                                                    <span>OpenStack</span>
+                                                    <span>Git</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3: Collaborer -->
+                                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front bg-dark-gray">
+                                            <h3>Collaborer</h3>
+                                            <p>Coordination, structuration et pilotage de projets informatiques à
+                                                travers des méthodes de travail collaboratives.</p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Collaborer</h3>
+                                            <div class="tools-container">
+                                                <strong>Outils :</strong>
+                                                <div class="tools-tags">
+                                                    <span>Trello</span>
+                                                    <span>GitHub Projects</span>
+                                                    <span>Git</span>
+                                                    <span>Notion</span>
+                                                    <span>Microsoft Teams</span>
+                                                    <span>Mindview</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2: Optimiser, Gérer, Conduire -->
+                            <div class="competence-slide" data-index="1">
+                                <!-- Card 4: Optimiser -->
+                                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front bg-orange">
+                                            <h3>Optimiser</h3>
+                                            <p>Optimisation d’applications pour maximiser les performances, la fiabilité
+                                                et l’efficience des ressources.</p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Optimiser</h3>
+                                            <div class="tools-container">
+                                                <strong>Compétences :</strong>
+                                                <div class="tools-tags">
+                                                    <span>Analyse de performance</span>
+                                                    <span>Complexité algorithmique</span>
+                                                    <span>Debugging</span>
+                                                    <span>Multi-threading</span>
+                                                    <span>Optimisation mémoire</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 5: Gérer -->
+                                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front bg-green-comp">
+                                            <h3>Gérer</h3>
+                                            <p>Création, modélisation et administration de bases de données afin
+                                                d’assurer la persistance, la sécurité et l’intégrité des informations.
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Gérer</h3>
+                                            <div class="tools-container">
+                                                <strong>Outils :</strong>
+                                                <div class="tools-tags">
+                                                    <span>MySQL</span>
+                                                    <span>PL/SQL</span>
+                                                    <span>PostgreSQL</span>
+                                                    <span>MongoDB</span>
+                                                    <span>NoSQL</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 6: Conduire -->
+                                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front bg-blue">
+                                            <h3>Conduire</h3>
+                                            <p>Comprendre les besoins des utilisateurs, suivre la chaîne de valeur
+                                                client, organiser et piloter un projet informatique.</p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Conduire</h3>
+                                            <div class="tools-container">
+                                                <strong>Compétences :</strong>
+                                                <div class="tools-tags">
+                                                    <span>Méthodes agiles</span>
+                                                    <span>Gestion de projet</span>
+                                                    <span>Analyse des besoins</span>
+                                                    <span>Chaîne de valeur</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Navigation Controls -->
+                        <div class="carousel-controls-global"
+                            style="display: flex; justify-content: center; gap: 30px; margin-top: -40px;">
+                            <button id="compPrevBtn" class="nav-arrow" aria-label="Précédent"
+                                style="width: 50px; height: 50px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M15 18l-6-6 6-6" />
+                                </svg>
+                            </button>
+                            <button id="compNextBtn" class="nav-arrow" aria-label="Suivant"
+                                style="width: 50px; height: 50px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9 18l6-6-6-6" />
+                                </svg>
+                            </button>
+                        </div>
+
+
+
+                        <!-- Section Évolution -->
+                        <div class="evolution-timeline" style="margin-top: 50px; margin-bottom: 50px;">
+                            <!-- <h2>Mon Évolution</h2> -->
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h3>1ère Année :<br>Les Fondations</h3>
+                                        <p>Apprentissage des bases de l'algorithmique, du développement web (HTML/CSS)
+                                            et de
+                                            l'administration système.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h3>2ème Année :<br>Approfondissement</h3>
+                                        <p>Développement d’applications complexes et gestion de bases de données
+                                            avancées,
+                                            appliqués lors d'un stage en entreprise et grands projets en équipe.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h3>3ème Année :<br>Professionnalisation</h3>
+                                        <p>Gestion de projet et mise en pratique en entreprise à travers des missions
+                                            concrètes
+                                            et des projets réalisés en conditions professionnelles.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Card 2 : Administrer (Yellow) -->
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-yellow">
-                                    <h3>Administrer</h3>
-                                    <p>Installer, configurer et maintenir les infrastructures, services et réseaux
-                                        informatiques.</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h3>Administrer</h3>
-                                    <div class="tools-container">
-                                        <strong>Compétences :</strong>
-                                        <div class="tools-tags">
-                                            <span>Linux</span>
-                                            <span>Kubernetes</span>
-                                            <span>Docker</span>
-                                            <span>Vagrant</span>
-                                            <span>Ansible</span>
-                                            <span>OpenStack</span>
-                                            <span>Git</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div style="text-align: center; margin-top: 40px;">
+                            <a href="experiences.html" class="btn">Découvrir mes projets</a>
                         </div>
-
-                        <!-- Card 3: Collaborer (Dark Gray) -->
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-dark-gray">
-                                    <h3>Collaborer</h3>
-                                    <p>Coordination, structuration et pilotage de projets informatiques à travers des méthodes de travail collaboratives.</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h3>Collaborer</h3>
-                                    <div class="tools-container">
-                                        <strong>Outils :</strong>
-                                        <div class="tools-tags">
-                                            <span>Trello</span>
-                                            <span>GitHub Projects</span>
-                                            <span>Git</span>
-                                            <span>Notion</span>
-                                            <span>Microsoft Teams</span>
-                                            <span>Mindview</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 : Optimiser (Orange) -->
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-orange">
-                                    <h3>Optimiser</h3>
-                                    <p>Optimisation d’applications pour maximiser les performances, la fiabilité et l’efficience des ressources.</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h3>Optimiser</h3>
-                                    <div class="tools-container">
-                                        <strong>Compétences :</strong>
-                                        <div class="tools-tags">
-                                            <span>Analyse de performance</span>
-                                            <span>Complexité algorithmique</span>
-                                            <span>Debugging</span>
-                                            <span>Multi-threading</span>
-                                            <span>Optimisation mémoire</span>
-                                            <span>Optimisation CPU</span>
-                                            <span>Optimisation GPU</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5: Gérer -->
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-green-comp">
-                                    <h3>Gérer</h3>
-                                    <p>Création, modélisation et administration de bases de données afin d’assurer la persistance, la sécurité et l’intégrité des informations.</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h3>Gérer</h3>
-                                    <div class="tools-container">
-                                        <strong>Outils :</strong>
-                                        <div class="tools-tags">
-                                            <span>MySQL</span>
-                                            <span>PL/SQL</span>
-                                            <span>PostgreSQL</span>
-                                            <span>MongoDB</span>
-                                            <span>NoSQL</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 6: Conduire (Blue) -->
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-blue">
-                                    <h3>Conduire</h3>
-                                    <p>Comprendre les besoins des utilisateurs, suivre la chaîne de valeur client, organiser et piloter un projet informatique.</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h3>Conduire</h3>
-                                    <div class="tools-container">
-                                        <strong>Compétences :</strong>
-                                        <div class="tools-tags">
-                                            <span>Méthodes agiles</span>
-                                            <span>Gestion de projet</span>
-                                            <span>Analyse des besoins</span>
-                                            <span>Chaîne de valeur</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-                    </div>
-                </div>
-
-                <!-- Section Évolution -->
-
-
-                <div style="text-align: center; margin-top: 40px;">
-                    <a href="experiences.html" class="btn">Découvrir mes projets</a>
-                </div>
             </section>
         </div>
     </main>

@@ -315,6 +315,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Competences Carousel Logic
+    const compSlides = document.querySelectorAll('.competence-slide');
+    const compNextBtn = document.getElementById('compNextBtn');
+    const compPrevBtn = document.getElementById('compPrevBtn');
+    let currentCompSlide = 0;
+
+    function showCompSlide(index) {
+        if (index >= compSlides.length) currentCompSlide = 0;
+        else if (index < 0) currentCompSlide = compSlides.length - 1;
+        else currentCompSlide = index;
+
+        compSlides.forEach(slide => slide.classList.remove('active'));
+        compSlides[currentCompSlide].classList.add('active');
+    }
+
+    if (compNextBtn && compPrevBtn && compSlides.length > 0) {
+        compNextBtn.addEventListener('click', () => {
+            showCompSlide(currentCompSlide + 1);
+        });
+
+        compPrevBtn.addEventListener('click', () => {
+            showCompSlide(currentCompSlide - 1);
+        });
+    }
+
 });
 
 // CV Preview Function

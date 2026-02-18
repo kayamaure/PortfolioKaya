@@ -2261,3 +2261,57 @@ main {
         flex-direction: column;
     }
 }
+
+/* --- Competences Carousel --- */
+.competence-carousel-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    /* Increased to fit 3 cards */
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px;
+}
+
+.competence-carousel-container {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+    /* Adjusted height */
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.competence-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: fadeEffect 0.5s;
+}
+
+.competence-slide.active {
+    display: flex;
+}
+
+/* Ensure flip card is centered and behaves well */
+.competence-slide .flip-card {
+    margin: 0;
+    flex: 1 1 300px;
+    /* Grow, shrink, base width */
+    max-width: 350px;
+}
+
+/* Competence Carousel Arrow Pulse */
+#compPrevBtn,
+#compNextBtn {
+    animation: pulse-nav 2s infinite;
+}
+
+.carousel-controls-global {
+    position: relative;
+    z-index: 50;
+    pointer-events: auto;
+}
